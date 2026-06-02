@@ -3,7 +3,7 @@
 ## 📝 Contexto
 Este é um projeto básico de sistemas embarcados desenvolvido para praticar estruturas de repetição controladas por contadores[cite: 7]. O circuito simula o acionamento sequencial de três LEDs (Vermelho, Verde e Azul) conectados a uma placa ESP32 no simulador Wokwi[cite: 7]. Os LEDs piscam em ordem, um de cada vez, repetindo esse ciclo exatamente 10 vezes antes de encerrar o programa[cite: 7].
 
-![Circuito do Projeto]()
+![Circuito do Projeto](https://github.com/joaotorresdev/Piano-ESP32/blob/main/pianinho.png)
 
 ## 🛠️ Linguagens Utilizadas
 * MicroPython[cite: 7]
