@@ -1,23 +1,16 @@
-# Sequenciador de LEDs com ESP32
+# Pisca-Pisca Sequencial com ESP32
 
-Este é um projeto inicial em MicroPython para aprender a controlar LEDs e ler botões usando a placa ESP32 no simulador Wokwi.
+## 📝 Contexto
+Este é um projeto básico de sistemas embarcados desenvolvido para praticar estruturas de repetição controladas por contadores[cite: 7]. O circuito simula o acionamento sequencial de três LEDs (Vermelho, Verde e Azul) conectados a uma placa ESP32 no simulador Wokwi[cite: 7]. Os LEDs piscam em ordem, um de cada vez, repetindo esse ciclo exatamente 10 vezes antes de encerrar o programa[cite: 7].
 
-![Interface do Projeto](https://github.com/joaotorresdev/Piano-ESP32/blob/main/PRINTPIANO.png)
+![Circuito do Projeto]()
 
-## 🚀 Sobre o Projeto
+## 🛠️ Linguagens Utilizadas
+* MicroPython[cite: 7]
 
-O circuito usa 3 botões para ativar diferentes efeitos de pisca-pisca em 3 LEDs (Vermelho, Amarelo e Verde). Ele funciona como o sistema de um semáforo automático ou luzes de sinalização.
-
-## 🛠️ Tecnologias
-
-* MicroPython
-* Placa ESP32
-* Simulador Wokwi
-
-## 💻 Como Funciona
-
-O programa fica monitorando os botões dentro de um laço infinito (`while True`):
-
-* **Botão 1:** Ativa o modo semáforo (acende o LED Vermelho por 3s, o Amarelo por 5s e o Verde por 1s).
-* **Botão 2:** Ativa um modo de alerta rápido, alternando os LEDs a cada 0.5 segundos.
-* **Botão 3:** Ativa uma sequência personalizada de testes.
+## 💻 Comandos Utilizados
+* `machine.Pin()`: Usado para configurar e mapear os pinos digitais do ESP32 como saídas (`machine.Pin.OUT`)[cite: 7].
+* `.on()`: Comando que envia sinal elétrico alto para ligar o LED desejado[cite: 7].
+* `.off()`: Comando que corta o sinal elétrico para desligar o LED[cite: 7].
+* `time.sleep()`: Função que pausa a execução do código por um tempo determinado (em segundos) para criar o efeito de piscar[cite: 7].
+* `while`: Estrutura de repetição usada para controlar que o ciclo só rode enquanto o contador for menor ou igual a 10[cite: 7].
