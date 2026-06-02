@@ -6,7 +6,8 @@ Este é um projeto básico de sistemas embarcados desenvolvido para praticar est
 ![Circuito do Projeto](https://github.com/joaotorresdev/Piano-ESP32/blob/main/pianinho.png)
 
 ## 🛠️ Linguagens Utilizadas
-* MicroPython[cite: 7]
+* Python
+  
 
 ## 💻 Comandos Utilizados
 * `machine.Pin()`: Usado para configurar e mapear os pinos digitais do ESP32 como saídas (`machine.Pin.OUT`)[cite: 7].
